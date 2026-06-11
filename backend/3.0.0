@@ -1,0 +1,9 @@
+Collecting greenlet
+  Using cached greenlet-3.5.0-cp312-cp312-win_amd64.whl.metadata (3.8 kB)
+Using cached greenlet-3.5.0-cp312-cp312-win_amd64.whl (238 kB)
+Installing collected packages: greenlet
+  Attempting uninstall: greenlet
+    Found existing installation: greenlet 3.5.0
+    Uninstalling greenlet-3.5.0:
+      Successfully uninstalled greenlet-3.5.0
+Successfully installed greenlet-3.5.0

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>京诚数科-中冶京诚 CERI</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="PageAdmin CMS">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../../images/font-awesome.min.css">
+    <link rel="stylesheet" href="../../images/animate.min.css">
+    <link rel="stylesheet" href="../../images/swiper.min.css">
+    <link rel="stylesheet" href="../../images/base.css">
+    <link rel="stylesheet" href="../../images/style.css">
+    <script src="../../images/jquery.min.js"></script>
+    <script src="../../images/basic.js"></script>
+    <script src="../../images/script.js"></script>
+    <script src="../../images/swiper.min.js"></script>
+    <script src="../../images/jquery.SuperSlide.2.1.3.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="respond.min.js"></script>
+        <script src="html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    
+
+<div class="header clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 logo-box"> <a class="logo" href="https://www.ceri.com.cn/"> <img src="../../images/cm-52138132642.gif" /> </a> </div>
+      <div class="col-md-6 top-right visible-md hidden-sm hidden-xs">
+        <ul class="website">
+          <li><a href="../../">中文</a> | </li>
+          <li><a href="https://en.ceri.com.cn/" target="_blank">ENGLISH</a></li>
+        </ul>
+        <div class="ss-box box-block row">
+ <form  method="get" >
+          <div class="col-xs-9 padding-0">
+       
+<input type="text" id="searchword" placeholder="" name="filter_LIKE_TITLE" class="s-input" value="" />
+          </div>
+          <div class="col-sm-3 col-xs-3">
+            <button type="submit" class="s-btn"  onclick='dosearch()' ></button>
+          </div>
+</form>
+        </div>
+
+<script>
+function dosearch(){
+
+ var sword=$("#searchword").val();
+ if(sword==""||sword==null){
+    alert("搜索关键字不能为空");
+    return false;
+ }else if(hasIllegalChar(sword)){
+  alert("输入的字符串包含非法字符!");
+  return false;
+ }else if(hasIllegalScriptChar(sword)){
+  alert("输入的字符串包含非法字符");
+  return false;
+ }else{
+  window.open("/was5/web/search?channelid=215805&searchword="+sword);
+ }
+}
+
+function hasIllegalChar(value){
+ reg=/[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im;
+ if(reg.test(value)){
+  return true;
+ }
+}
+
+function hasIllegalScriptChar(str) {
+ return new RegExp(".*?script[^>]*?.*?(<\/.*?script.*?>)*", "ig").test(str);
+}
+</script>
+        
+      </div>
+      <div class="mask-bg" id="maskBg"></div>
+      <span class="nav-toggle hidden-lg" id="navToggle"><i class="fa fa-bars" aria-hidden="true"></i></span> </div>
+  </div>
+</div>
+<div class="nav-bg">
+  <div class="container">
+    <div class="nav" id="navMenu">
+      <ul>
+        <li data-id="61"><a href="../../">首页</a></li>
+        <li data-id="167"><a href="../../zjjc/">走进京诚</a>
+          <ul>
+          	
+            <li data-id="168" class="animated navSlide"><a href="../../zjjc/jcjs/">京诚介绍</a></li>
+            
+            <li data-id="169" class="animated navSlide"><a href="../../zjjc/dszzc/">董事长致辞</a></li>
+            
+            <li data-id="170" class="animated navSlide"><a href="../../zjjc/gltd/">管理团队</a></li>
+            
+            <li data-id="171" class="animated navSlide"><a href="../../zjjc/zzjg/">组织架构</a></li>
+            
+            <li data-id="172" class="animated navSlide"><a href="../../zjjc/qyzz/">企业资质</a></li>
+            
+            <li data-id="173" class="animated navSlide"><a href="../../zjjc/xxhgz/">学协会工作</a></li>
+            
+          </ul>
+          <span class="arrow"></span></li>
+        <li data-id="174"><a href="../../xwzx/">新闻中心</a>
+          <ul>
+            
+            <li data-id="175" class="animated navSlide"><a href="../../xwzx/jcyw/">京诚要闻</a></li>
+            
+            <li data-id="176" class="animated navSlide"><a href="../../xwzx/mtjj/">媒体聚焦</a></li>
+            
+            <li data-id="177" class="animated navSlide"><a href="../../xwzx/dsjy/">京诚党建</a></li>
+            
+            <li data-id="178" class="animated navSlide"><a href="../../xwzx/jy70z/">建院70载</a></li>
+            
+            <li data-id="179" class="animated navSlide"><a href="../../xwzx/xxgk/">信息公开</a></li>
+            
+          </ul>
+          <span class="arrow"></span></li>
+        <li data-id="180"><a href="../">业务产品</a>
+          <ul>
+            
+            <li data-id="181" class="animated navSlide"><a href="../yjyw/">冶金业务</a></li>
+            
+            <li data-id="256" class="animated navSlide"><a href="../cjyw/">城建业务</a></li>
+            
+            <li data-id="269" class="animated navSlide"><a href="../swyw/">京诚清能</a></li>
+            
+            <li data-id="304" class="animated navSlide"><a href="../srszx/">赛瑞斯咨询</a></li>
+            
+            <li data-id="317" class="animated navSlide"><a href="./">京诚数科</a></li>
+            
+            <li data-id="338" class="animated navSlide"><a href="../hwyw/">海外业务</a></li>
+            
+          </ul>
+          <span class="arrow"></span></li>
+        <li data-id="339"><a href="../../kjcx/">科技创新</a>
+          <ul>
+            <li data-id="340" class="animated navSlide"><a href="../../kjcx/yftx/">研发体系</a></li>
+            <li data-id="341" class="animated navSlide"><a href="../../kjcx/bzgf/">标准规范</a>
+              <ul>
+                
+            <li data-id="342" class="animated navSlide"><a href="../../kjcx/bzgf/zb/">主编</a></li>
+            
+            <li data-id="343" class="animated navSlide"><a href="../../kjcx/bzgf/sb/">参编</a></li>
+            
+              </ul>
+              <span class="arrow"></span></li>
+            <li data-id="344" class="animated navSlide"><a href="../../kjcx/cg/">成果</a>
+              <ul>
+                <li data-id="345" class="animated navSlide"><a href="../../kjcx/cg/kjcg/">科技成果</a>
+                  <ul>
+                    
+            <li data-id="346" class="animated navSlide"><a href="../../kjcx/cg/kjcg/gjjjx/">国家级奖项</a></li>
+            
+            <li data-id="347" class="animated navSlide"><a href="../../kjcx/cg/kjcg/sbjjx/">省部级奖项</a></li>
+            
+                  </ul>
+                  <span class="arrow"></span></li>
+                <li data-id="348" class="animated navSlide"><a href="../../kjcx/cg/gcxm/">工程项目</a>
+                  <ul>
+                    
+            <li data-id="349" class="animated navSlide"><a href="../../kjcx/cg/gcxm/gjjjx_4102/">国家级奖项</a></li>
+            
+            <li data-id="350" class="animated navSlide"><a href="../../kjcx/cg/gcxm/sbjjx_4103/">省部级奖项</a></li>
+            
+                  </ul>
+                  <span class="arrow"></span></li>
+              </ul>
+              <span class="arrow"></span></li>
+          </ul>
+          <span class="arrow"></span></li>
+        <li data-id="351"><a href="../../qywh/">企业文化</a>
+          <ul>
+            <li data-id="352" class="animated navSlide"><a href="../../qywh/qyln/">企业理念</a>
+              <ul>
+                
+            <li data-id="353" class="animated navSlide"><a href="../../qywh/qyln/zgwkqyln/">中国五矿企业文化</a></li>
+            
+            <li data-id="354" class="animated navSlide"><a href="../../qywh/qyln/zyjtqyln/">中国中冶企业文化</a></li>
+            
+            <li data-id="355" class="animated navSlide"><a href="../../qywh/qyln/qyln/">中冶京诚企业文化</a></li>
+            
+              </ul>
+              <span class="arrow"></span></li>
+            
+            <li data-id="356" class="animated navSlide"><a href="../../qywh/zlgh/">战略规划</a></li>
+            
+            <li data-id="357" class="animated navSlide"><a href="../../qywh/hdfc/">活动风采</a></li>
+            
+            <li data-id="358" class="animated navSlide"><a href="../../qywh/shzr/">社会责任</a></li>
+            
+          </ul>
+          <span class="arrow"></span></li>
+        <li data-id="3403"><a href="https://ceri.zhiye.com/custom/index" target="_blank">人才招聘</a></li>
+        <li data-id="360"><a href="../../lxwm/">联系我们</a>
+          <ul>
+            
+            <li data-id="361" class="animated navSlide"><a href="../../lxwm/lxfs/">联系方式</a></li>
+            
+            <li data-id="362" class="animated navSlide"><a href="../../lxwm/khjy/">客户建议</a></li>
+            
+          </ul>
+          <span class="arrow"></span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    var $navToggle = $("#navToggle");
+    var $maskBg = $("#maskBg");
+    var $navMenu = $("#navMenu");
+
+    $navToggle.on("click", function () {
+        $maskBg.addClass("active");
+        $navMenu.addClass("active");
+    });
+    $maskBg.on("click", function () {
+        $maskBg.removeClass("active");
+        $navMenu.removeClass("active");
+    });
+    $navMenu.children("ul").find("li").InitNav(180,180);
+
+    $navMenus = $("#navMenu");
+    $navMenus.find("li[data-id='180']").addClass("current");
+    var $navLis = $navMenus.find("li");
+    var $navLi = $navMenus.find("li[data-id='180']");
+    $navLis.each(function () {
+        var $this = $(this);
+        $this.children("a").on("mouseenter", function () {
+            $navLis.removeClass("current");
+            $this.addClass("current");
+        })
+    });
+    $navMenus.on("mouseleave", function () {
+        $navLis.removeClass("current");
+        $navLi.addClass("current");
+        console.log($navLi)
+    })
+</script>
+<div class="seachphone">
+  <div class="ss-box box-block row">
+ <form method="post" >
+          <div class="col-xs-9 padding-0">
+       
+<input type="text" id="searchword1" placeholder="" name="filter_LIKE_TITLE" class="s-input" value="" />
+          </div>
+          <div class="col-sm-3 col-xs-3">
+            <button type="submit" class="s-btn"  onclick='dosearch1()' ></button>
+          </div>
+</form>
+  </div>
+
+
+<script>
+function dosearch1(){
+
+ var sword=$("#searchword1").val();
+ if(sword==""||sword==null){
+    alert("搜索关键字不能为空");
+    return false;
+ }else if(hasIllegalChar(sword)){
+  alert("输入的字符串包含非法字符!");
+  return false;
+ }else if(hasIllegalScriptChar(sword)){
+  alert("输入的字符串包含非法字符");
+  return false;
+ }else{
+  window.open("/was5/web/search?channelid=215805&searchword="+sword);
+ }
+}
+
+function hasIllegalChar(value){
+ reg=/[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im;
+ if(reg.test(value)){
+  return true;
+ }
+}
+
+function hasIllegalScriptChar(str) {
+ return new RegExp(".*?script[^>]*?.*?(<\/.*?script.*?>)*", "ig").test(str);
+}
+</script>
+
+
+
+
+  <script src="../../images/help.js"></script> 
+</div>
+<script src="../../images/viewer.min.js" type="text/javascript"></script>
+<div class="container">
+  <ul class="breadcrumb">
+    <li><span> 当前位置：</span><a href="../../" target="_self" title="首页" class="CurrChnlCls">首页</a>&nbsp;>&nbsp;<a href="../" target="_self" title="业务产品" class="CurrChnlCls">业务产品</a>&nbsp;>&nbsp;<a href="./" target="_self" title="京诚数科" class="CurrChnlCls">京诚数科</a></li>
+  
+  </ul>
+</div>
+<div class="white-background">
+    <div class="container padding-top-10">
+        <div class="row">
+            <div class="col-md-3">
+                
+<div class="sub-nav-box visible-md hidden-sm hidden-xs">
+    <div class="sub-nav" id="subNav">
+        <ul class="current active">
+          
+            <li data-id="181"><a href="../yjyw/">冶金业务</a></li>
+            
+            <li data-id="256"><a href="../cjyw/">城建业务</a></li>
+            
+            <li data-id="269"><a href="../swyw/">京诚清能</a></li>
+            
+            <li data-id="304"><a href="../srszx/">赛瑞斯咨询</a></li>
+            
+            <li data-id="317"><a href="./">京诚数科</a></li>
+            
+            <li data-id="338"><a href="../hwyw/">海外业务</a></li>
+            
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var $subNav = $("#subNav");
+    $subNav.children("ul").find("li").InitNav(317);//初始化响应式菜单
+</script>
+            </div>
+            <div class="col-md-9">
+                
+
+<div class="index-comtit">
+    <div class="tit">
+        京诚数科
+    </div>
+</div>
+
+                <div class="info-content">
+                    <div class=TRS_Editor><div class="Custom_UnionStyle">
+<div>　　中冶京诚数字科技（北京）有限公司，是中冶京诚工程技术有限公司全资子公司，是经工商部门注册的具有独立法人资格的经济实体，通过国家软件产品和软件企业（双软）、全球软件行业权威标准CMMI（能力成熟度模型集成）五级认证。京诚数科公司长期致力于冶金行业新一代智能制造技术和数字城市研究，围绕“中国制造2025”国家战略，不断推动制造企业信息化、自动化深度融合，向智慧制造迈进。公司经过十几年的发展，已成为行业内知名的智能制造软件和服务提供商，承担工信部工业互联网大数据应用服务及多个试点示范项目，是国家认证的两化融合咨询服务企业和智能制造集成商，为企业提供全流程智能制造解决方案。</div>
+</div></div>
+                </div>
+                <ul class="row images-list imgae-same-size text-center" id="imageList">
+                  
+                    <li class="col-md-6 col-sm-6 col-xs-6 padding-bottom-30 boxline item">
+                        <div class="boxs">
+                            <a href="./zngc/">
+                                   <img src="./zngc/images/P020241018561280741331.png" alt="智能工厂" data-bindresize="1" style="width: 314px; height: 176px;" />
+                            </a>
+                            <a href="./zngc/"><div class="padding-top-10 card1">智能工厂</div></a>
+                        </div>
+                    </li>
+                  
+                    <li class="col-md-6 col-sm-6 col-xs-6 padding-bottom-30 boxline item">
+                        <div class="boxs">
+                            <a href="./szcs/">
+                                   <img src="./szcs/images/P020241018561783128822.jpg" alt="数字城市" data-bindresize="1" style="width: 314px; height: 176px;" />
+                            </a>
+                            <a href="./szcs/"><div class="padding-top-10 card1">数字城市</div></a>
+                        </div>
+                    </li>
+                  
+                  
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<footer>
+<style>
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: 40%!important;
+    }
+}
+@media (min-width: 768px) {
+    .col-sm-6 {
+        width: 40%!important;
+    }
+}
+@media (min-width: 992px) {
+    .beian {
+        width: 24%!important;
+    }
+}
+@media (min-width: 768px) {
+    .beian {
+        width: 24%!important;
+    }
+}
+.erweima {
+max-width: 120px;
+margin: auto;
+    }
+
+@media (min-width: 992px) {
+    .erweima {
+        width: 12%;
+    }
+}
+@media (min-width: 768px) {
+    .erweima {
+        width: 12%;
+    }
+}
+</style>
+  <div class="container">
+    <div class="row text-center">
+      
+      <div class="col-md-6 col-sm-6 padding-top-20">
+        <ul class="footnav">
+          <li><a href="../../">网站首页</a><span>|</span></li>
+          <li><a href="../../wzdt/">网站地图</a><span>|</span></li>
+          <li><a href="#">法律声明</a><span>|</span></li>
+          <li><a href="../../lxwm/">联系我们</a></li>
+        </ul>
+        <div class="copyright"> 版权所有 2022 中冶京诚 CERI ALL RIGHT REVESVED
+          <p><a href="https://beian.miit.gov.cn/" target="_blank">京ICP备05055935号</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 padding-top-20 beian"> <img src="../../images/device.png" />
+        <p class="padding-top-10">京公网安备 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010267" target="_blank">11030102010267号</a></p>
+      </div>
+
+      <div class="col-md-3 col-sm-3 padding-top-20 erweima"><img src="../../images/gsgwewm.jpg" title="扫描关注" />
+        <p class="padding-top-6">微信公众号</p>
+      </div>
+      <div class="col-md-3 col-sm-3 padding-top-20 erweima"><img src="../../images/zgzyqlqktsdj20250904.png" alt="" />
+        <p class="padding-top-6">中国中冶清理中小企业欠款投诉登记</p>
+      </div>
+      <div class="col-md-3 col-sm-3 padding-top-20 erweima"><img src="../../images/zyjcstqtsdj20250904.png" alt="" />
+        <p class="padding-top-6">中冶京诚<br/>“双拖欠”<br/>投诉登记</p>
+      </div>
+      <!--<div class="col-md-3 col-sm-3 padding-top-20 erweima"><img src="../../images/zyjcqqgtpt20250904.png" alt="" />
+        <p class="padding-top-6">中冶京诚清欠沟通平台</p>
+      </div>-->
+
+    </div>
+  </div>
+</footer>
+
+<!--PC置顶-->
+<a class="gotoptop_icon" id="goToTops" href="#" title="返回顶部" style="display: none;"></a>
+
+<!--移动端固定栏目按钮-->
+<span id="floatNavToggle" class="float-nav-toggle display-xs-block hidden"><i class="fa fa-bars"></i></span>
+
+<!-- 移动端底部固定导航 -->
+<div class="footer-fixed">
+    <ul>
+        <li class="col-sm-4 col-xs-4">
+            <a href="https://www.ceri.com.cn/">
+                <i class="fa fa-home"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li class="col-sm-4 col-xs-4">
+            <a href="tel:8610-67835888">
+                <i class="fa fa-phone-square"></i>
+                <span>资讯电话</span>
+            </a>
+        </li>
+        <li class="col-sm-4 col-xs-4">
+            <a href="#" id="goToTop">
+                <i class="fa fa-caret-square-o-up"></i>
+                <span>置顶</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#goToTops').hide();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+                $('#goToTops').fadeIn();
+
+            } else {
+                $('#goToTops').fadeOut();
+            }
+        });
+        $('#goToTops a').click(function () {
+            $('html ,body').animate({ scrollTop: 0 }, 300);
+            return false;
+        });
+    });
+
+    var _hmt = _hmt || [];//移动端固定栏目按钮
+    $("#floatNavToggle").on("click", function () {
+        $maskBg.addClass("active");
+        $navMenu.addClass("active");
+    });
+
+    //手机端置顶
+    $goToTop = $('#goToTop');
+    $goToTop.click(function () {
+        $('html ,body').animate({ scrollTop: 0 }, 300);
+        return false;
+    });
+</script>
+
+
+</body></html>
